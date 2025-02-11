@@ -70,25 +70,11 @@
                 "description": "Enter Azure Tenant Id of your Azure Active Directory."
             }
         },
-        "AzureResourceGroupName": {
+        "AzureWorkspacseID": {
             "type": "string",
             "minLength": 1,
             "metadata": {
-                "description": "Enter Azure Resource Group Name in which you want deploy the data connector."
-            }
-        },
-        "AzureWorkspaceName": {
-            "type": "string",
-            "minLength": 1,
-            "metadata": {
-                "description": "Enter Microsoft Sentinel Workspace Name of log analytics Workspace."
-            }
-        },
-        "AzureSubscriptionID": {
-            "type": "string",
-            "minLength": 1,
-            "metadata": {
-                "description": "Enter Azure Subscription Id which is present in the subscription tab in Microsoft Sentinel."
+                "description": "Enter workspace id Id of your Azure Active Directory."
             }
         },
         "AppInsightsWorkspaceResourceID": {
@@ -239,9 +225,7 @@
                         "AzureClientID": "[parameters('AzureClientID')]",
                         "AzureClientSecret": "[parameters('AzureClientSecret')]",
                         "AzureTenantID": "[parameters('AzureTenantID')]",
-                        "AzureResourceGroupName": "[parameters('AzureResourceGroupName')]",
-                        "AzureWorkspaceName": "[parameters('AzureWorkspaceName')]",
-                        "AzureSubscriptionID": "[parameters('AzureSubscriptionID')]",
+                        "AzureWorkspacseID": "[parameters('AzureWorkspacseID')]",
                         "timeInterval": "[parameters('TimeInterval')]",
                         "Polling":  "[variables('Polling')]",
                         "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/shubhamloginsoft/VMRay/raw/refs/heads/main/VMRay.zip?raw=true"
